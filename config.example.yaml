@@ -1,0 +1,14 @@
+---
+# Distrubuited K8s Packet Trace
+#setup
+cluster: "<cluster_name>"
+#targets
+trace_targets:
+  - "<trace__1_name>"
+    type: "node|pod|service"
+    address: "<node_name>|<pod_name>|<service_name>"`e`
+    namespace: "<namespace>" #only required for pods and services
+  - "<trace__2_name>"
+    type: "node|pod|service"
+    address: "<node_name>|<pod_name>|<service_name>"
+    namespace: "<namespace>" #only required for pods and services
